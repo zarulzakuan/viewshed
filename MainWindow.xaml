@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:arcgis3dtest1"
+        xmlns:esri="http://schemas.esri.com/arcgis/runtime/2013"  x:Class="arcgis3dtest1.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+
+        <esri:SceneView x:Name="Map3D" AtmosphereEffect="Realistic" Margin="386.4,0,0,0">
+            <esri:SceneView.InteractionOptions>
+                <esri:SceneViewInteractionOptions IsEnabled="True" IsFlickEnabled="True" />
+
+            </esri:SceneView.InteractionOptions>
+        </esri:SceneView>
+        <!--<Button x:Name="buttonFwd" Content="Forward" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="668.8,10,0,0" Click="ButtonFwd_Click" KeyDown="buttonFwd_KeyDown"/>
+        <Button x:Name="buttonRev" Content="Reverse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="668.8,59.92,0,0" Click="ButtonRev_Click"/>
+        <Button x:Name="buttonLeft" Content="Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="628.6,34.96,0,0" Click="ButtonLeft_Click"/>
+        <Button x:Name="buttonRight" Content="Right" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="708.6,34.96,0,0" Click="ButtonRight_Click"/>
+        <Button x:Name="ButtonRotateRight" Content="Rotate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="668.8,84.88,0,0" Click="ButtonRotateRight_Click"/>-->
+        <esri:MapView x:Name="Map2D" HorizontalAlignment="Left" WrapAroundMode="EnabledWhenSupported" Width="381.4"/>
+
+    </Grid>
+</Window>
